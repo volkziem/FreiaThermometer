@@ -1,11 +1,4 @@
-<div>
-
-FREIA Thermometer {#freia-thermometer align="center"}
-=================
-
-### V. Ziemann, Uppsala University, Uppsala, Sweden {#v.-ziemann-uppsala-university-uppsala-sweden align="center"}
-
-### Jan 26, 2024 {#jan-26-2024 align="center"}
+# FREIA Thermometer
 
 In order to present the current outdoors temperature in an attractive
 way in our lab called FREIA, I use a fairly robust DS18b20 thermometer
@@ -13,30 +6,15 @@ that has the sensor encapsulated in a waterproof sensor-head with a
 robust cable attached. An Arduino NANO reads out the thermometer and
 displays the temperature with the help of a NeoPixel strip with sixty
 three-color LED. The design is loosely based on the NeoPixel Thermometer
-discussed in Section 4.5.7 in my book *A Hands-on Course in Sensors
-using the Arduino and Raspberry Pi, 2nd edition* that was published by
+discussed in Section 4.5.7 in my book [*A Hands-on Course in Sensors
+using the Arduino and Raspberry Pi, 2nd edition*](https://www.routledge.com/9781032376196) that was published by
 CRC Press in 2023 where more information on this and other projects can
 be found. See also the book\'s code repository at
-[`https://github.com/volkziem/HandsOnSensors2ed`](https://github.com/volkziem/HandsOnSensors2ed).
+[https://github.com/volkziem/HandsOnSensors2ed](https://github.com/volkziem/HandsOnSensors2ed).
 
-::: {.p}
-:::
 
-::: {.p}
-:::
+![Image of Freia thermometer](FreiaThermometer_bb.png)
 
-[]{#tth_fIg1}
-
-::: {style="text-align:center"}
-![](FreiaThermometer_bb.png)
-:::
-
-::: {style="text-align:center"}
-Figure 1: []{#fig:bb} FREIA Thermometer.
-:::
-
-::: {.p}
-:::
 
 I assembled a prototype system on the solder-less breadboard shown
 below. The NANO is mounted on the right-hand side of the breadboard. It
@@ -56,9 +34,6 @@ connected via the cyan-colored wire to pin D6 on the NANO. I also added
 two capacitors with a few μF and 100 nF across the lower power rails to
 stabilize the voltage.
 
-::: {.p}
-:::
-
 The code that brings the project to live is reproduced below. First we
 include support for 1-wire protocol and the specifics of the DS18b20
 sensor before specifying with which pin to readout the temperature. The
@@ -68,9 +43,6 @@ via the object `sensors.` Then we include support for the Neopixels,
 define how many pixels are on our strip and to which pin it is
 connected, and instantiate the object `pixels` that we henceforth use to
 control the Neopixels.
-
-::: {.p}
-:::
 
 In the function `setup()` we open the serial connection, which useful
 for debugging. Comment out this line in the final version. Next, the tow
@@ -93,9 +65,6 @@ calls to `random()` inside the function `pixels.setPixelColor()` causes
 the flickering. After the loop over `i` all pixels are updated at once
 with `pixel.show()`. After a 50 ms delay, the next iteration over `k`
 starts.
-
-::: {.p}
-:::
 
 In a nutshell, the system reads the temperature, loops of 20 flickering
 iterations and updates the displayed temperature before starting with
