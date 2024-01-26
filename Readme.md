@@ -13,9 +13,6 @@ be found. See also the book\'s code repository at
 [https://github.com/volkziem/HandsOnSensors2ed](https://github.com/volkziem/HandsOnSensors2ed).
 
 
-![Image of Freia thermometer](FreiaThermometer_bb.png)
-
-
 I assembled a prototype system on the solder-less breadboard shown
 below. The NANO is mounted on the right-hand side of the breadboard. It
 receives electrical power via the upper power rails. All ground
@@ -33,6 +30,8 @@ shown. It is also connected to the power rails and its DataIn pin is
 connected via the cyan-colored wire to pin D6 on the NANO. I also added
 two capacitors with a few μF and 100 nF across the lower power rails to
 stabilize the voltage.
+
+![Image of Freia thermometer](FreiaThermometer_bb.png)
 
 The code that brings the project to live is reproduced below. First we
 include support for 1-wire protocol and the specifics of the DS18b20
