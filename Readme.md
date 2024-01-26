@@ -107,14 +107,3 @@ the next reading of temperatures. And that\'s all. Have fun!
           delay(50);
         }
       }
-
-\
-\
-
-------------------------------------------------------------------------
-
-[File translated from T~[E]{.small}~X by
-[T~[T]{.small}~H](http://hutchinson.belmont.ma.us/tth/), version 4.08.\
-On 26 Jan 2024, 14:41.]{.small}
-
-</div>
