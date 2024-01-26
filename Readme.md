@@ -106,3 +106,5 @@ starts.
 In a nutshell, the system reads the temperature, loops of 20 flickering
 iterations and updates the displayed temperature before starting with
 the next reading of temperatures. And that\'s all. Have fun!
+
+And here is a [pdf of the info from this web page](freia-thermometer.pdf).
