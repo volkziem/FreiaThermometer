@@ -65,10 +65,6 @@ the flickering. After the loop over `i` all pixels are updated at once
 with `pixel.show()`. After a 50 ms delay, the next iteration over `k`
 starts.
 
-In a nutshell, the system reads the temperature, loops of 20 flickering
-iterations and updates the displayed temperature before starting with
-the next reading of temperatures. And that\'s all. Have fun!
-
       //FREIA thermometer, V. Ziemann, 221020
       // DS18b20 1-wire temperature sensor
       #include <OneWire.h>
@@ -106,3 +102,7 @@ the next reading of temperatures. And that\'s all. Have fun!
           delay(50);
         }
       }
+
+In a nutshell, the system reads the temperature, loops of 20 flickering
+iterations and updates the displayed temperature before starting with
+the next reading of temperatures. And that\'s all. Have fun!
