@@ -1,7 +1,7 @@
 # FREIA Thermometer
 
 In order to present the current outdoors temperature in an attractive
-way in our lab called FREIA, I use a fairly robust DS18b20 thermometer
+way in our lab called FREIA, I use a fairly rugged DS18b20 thermometer
 that has the sensor encapsulated in a waterproof sensor-head with a
 robust cable attached. An Arduino NANO reads out the thermometer and
 displays the temperature with the help of a NeoPixel strip with sixty
